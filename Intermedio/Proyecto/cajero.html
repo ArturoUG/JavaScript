@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="cajero.css">
+    <title>Cajero</title>
+</head>
+<body>
+
+<audio src="sonido/tecla.mp3" id="tecla_id"></audio>
+    <audio src="sonido/alerta.mp3" id="alerta_id"></audio>
+    <audio src="sonido/entrega.mp3" id="entrega_id"></audio>
+
+    <div class="fondo">
+      <img class="fondoImg" src="1.jpg"></img>
+
+      <div class="Contenidos">
+        <p class= "datos">
+          <h1><strong>Ingrese el monto deseado</strong></h1>
+          <input class="texto" type="text" id="pantalla_texto" /><br />
+          <br /><input type="button" value="REALIZAR EXTRACCIÓN" class="boton" id="botonExtraccion" />
+        </p>
+      </div>
+
+      <div class="display">
+        <p id="resultado">
+        </p>
+      </div>
+
+      <div class="display2" >
+        <p id="carga_id">
+        </p>
+      </div>
+    </div>
+<script src="cajero.js"></script>
+</body>
+</html>
